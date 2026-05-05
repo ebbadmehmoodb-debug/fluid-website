@@ -1,0 +1,5 @@
+aihub_scraped.json
+screenshot-*.png
+*.tmp
+.DS_Store
+Thumbs.db

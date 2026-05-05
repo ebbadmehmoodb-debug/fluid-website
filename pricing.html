@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing — FLUID Design Agency</title>
+  <meta name="description" content="Transparent pricing for brand identity, web design, Webflow development, and retainer packages from FLUID."/>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <div class="announcement">
+    <span>All projects start with a free discovery call — no commitment needed.</span>
+    <a href="contact.html">Book now →</a>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="font-size:22px;font-weight:700;">FLUID</a>
+      <ul class="nav-links">
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html" style="opacity:1;font-weight:700;">Pricing</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Book Discovery Call</a>
+      <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="case-studies.html">Case Studies</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="process.html">Process</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary">Book Discovery Call</a>
+  </div>
+
+  <section style="padding:100px 0 60px;">
+    <div class="container">
+      <span class="eyebrow reveal">PRICING</span>
+      <h1 class="reveal">Transparent. Flexible.<br/>No surprises.</h1>
+      <p style="max-width:560px;font-size:18px;margin-top:20px;" class="reveal">Every project is scoped on your goals — but here's exactly what to expect. Toggle between one-time projects and ongoing Fluidity retainers.</p>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+
+      <!-- Toggle -->
+      <div class="pricing-toggle reveal">
+        <button class="active" data-target="onetime">One-Time Projects</button>
+        <button data-target="retainer">Fluidity Retainers</button>
+      </div>
+
+      <!-- One-Time Pane -->
+      <div class="pricing-pane pricing-grid pricing-grid--4 reveal" data-pane="onetime">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Brand Starter</div>
+          <div class="pricing-price">$4,500</div>
+          <p class="pricing-desc">Your core visual identity — logo, colors, typography, and usage guidelines.</p>
+          <ul class="pricing-features">
+            <li>Brand strategy session</li>
+            <li>Logo design (3 concepts)</li>
+            <li>Color &amp; type system</li>
+            <li>Brand guidelines PDF</li>
+            <li>3 key brand assets</li>
+            <li>2 revision rounds</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Web Design</div>
+          <div class="pricing-price">$3,500</div>
+          <p class="pricing-desc">A fully designed website (no dev) — ready to hand off or build yourself.</p>
+          <ul class="pricing-features">
+            <li>Up to 8 page designs</li>
+            <li>Mobile responsive</li>
+            <li>Figma source files</li>
+            <li>UX wireframes</li>
+            <li>Component library</li>
+            <li>2 revision rounds</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Brand + Web (MOMENTUM)</div>
+          <div class="pricing-price">$9,500</div>
+          <p class="pricing-desc">Full brand identity AND a Webflow website — everything you need to launch.</p>
+          <ul class="pricing-features">
+            <li>Everything in Brand Starter</li>
+            <li>Webflow site (up to 10 pages)</li>
+            <li>CMS setup</li>
+            <li>SEO foundations</li>
+            <li>AI discoverability audit</li>
+            <li>1 month free support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-teal">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Full System</div>
+          <div class="pricing-price">Custom</div>
+          <p class="pricing-desc">Strategy, brand, web, app, and discoverability — the complete FLUID treatment.</p>
+          <ul class="pricing-features">
+            <li>Brand strategy &amp; positioning</li>
+            <li>Complete visual identity</li>
+            <li>Webflow development</li>
+            <li>Web app (if needed)</li>
+            <li>AI discoverability setup</li>
+            <li>Priority access</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Let's Talk</a>
+        </div>
+
+      </div>
+
+      <!-- Retainer Pane -->
+      <div class="pricing-pane pricing-grid pricing-grid--3 reveal" data-pane="retainer" style="display:none;">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Fluidity Lite</div>
+          <div class="pricing-price">$1,500<sub>/mo</sub></div>
+          <p class="pricing-desc">Ongoing brand maintenance and small design updates to keep you sharp.</p>
+          <ul class="pricing-features">
+            <li>8 design hours/month</li>
+            <li>Monthly brand audit</li>
+            <li>Up to 3 design tasks</li>
+            <li>48h turnaround</li>
+            <li>Slack access</li>
+            <li>Monthly report</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Fluidity Growth</div>
+          <div class="pricing-price">$3,500<sub>/mo</sub></div>
+          <p class="pricing-desc">Full ongoing design + AI monitoring + web updates. The compound brand system.</p>
+          <ul class="pricing-features">
+            <li>20 design hours/month</li>
+            <li>Weekly brand touchpoints</li>
+            <li>Unlimited design tasks</li>
+            <li>24h turnaround</li>
+            <li>AI discoverability monitoring</li>
+            <li>Monthly strategy session</li>
+            <li>Priority Slack access</li>
+          </ul>
+          <a href="contact.html" class="btn btn-teal">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Fluidity Scale</div>
+          <div class="pricing-price">$6,500<sub>/mo</sub></div>
+          <p class="pricing-desc">Full design team embedded in your company — brand, web, and AI, all month long.</p>
+          <ul class="pricing-features">
+            <li>40+ design hours/month</li>
+            <li>Dedicated design lead</li>
+            <li>Same-day turnaround</li>
+            <li>Full AI strategy</li>
+            <li>Web dev included</li>
+            <li>Weekly C-suite reporting</li>
+            <li>Quarterly brand review</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Let's Talk</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note reveal">All prices in USD. Minimum 3-month commitment on retainers. Projects scoped after discovery call — prices may vary based on complexity.</p>
+
+    </div>
+  </section>
+
+  <!-- FAQ Teaser -->
+  <section style="padding:var(--section-pad);background:var(--c-bg);">
+    <div class="container">
+      <div class="section-hd reveal">
+        <span class="eyebrow">COMMON QUESTIONS</span>
+        <h2>Quick answers.</h2>
+      </div>
+      <div style="display:grid;gap:0;max-width:760px;">
+        <div class="faq-item">
+          <button class="faq-q">Do you offer payment plans? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Yes — most projects are split 50% upfront, 50% on delivery. Retainers are billed monthly. Payment plans available on request.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long does a typical project take? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Brand Identity: 3–5 weeks. Webflow site: 4–6 weeks. Combined Brand + Web: 6–9 weeks. Timelines depend on feedback speed and scope.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I start with a one-time project and add a retainer later? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Absolutely — that's how most clients start. After your project launches, you can roll into a Fluidity retainer at a discounted rate as an existing client.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What if I need something custom? <span class="faq-icon">+</span></button>
+          <div class="faq-a"><p>Book a discovery call and we'll scope it together. Custom quotes are provided within 48 hours of your call.</p></div>
+        </div>
+      </div>
+      <div style="margin-top:40px;" class="reveal">
+        <a href="faq.html" class="btn btn-secondary">View All FAQs →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container reveal">
+      <span class="eyebrow">START TODAY</span>
+      <h2>Find the right package for your goals.</h2>
+      <p>Book a free discovery call and we'll recommend the exact services you need — no upsell, no pressure.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary btn--lg">Book Discovery Call</a>
+        <a href="comparison.html" class="btn btn-secondary btn--lg">Compare vs. Agencies →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="index.html" style="font-size:22px;font-weight:700;color:#fff;">FLUID</a><p>Design that learns, remembers, and compounds.</p></div>
+        <div class="footer-col"><h4>Work</h4><ul><li><a href="case-studies.html">Case Studies</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="resources.html">Resources</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="process.html">Process</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact.html">Book a Call</a></li><li><a href="faq.html">FAQ</a></li><li><a href="comparison.html">Why FLUID?</a></li><li><a href="mailto:hello@fluid.agency">hello@fluid.agency</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 FLUID. All rights reserved.</span><div style="display:flex;gap:20px;"><a href="legal.html">Privacy</a><a href="legal.html#terms">Terms</a><a href="legal.html#cookies">Cookies</a></div></div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

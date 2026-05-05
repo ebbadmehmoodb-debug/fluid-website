@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Discovery Call — FLUID</title>
+  <meta name="description" content="Book a free 30-minute discovery call with FLUID. No pitch, just strategy. Let's figure out exactly what your brand needs."/>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="font-size:22px;font-weight:700;">FLUID</a>
+      <ul class="nav-links">
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary" style="opacity:1;">Book Discovery Call</a>
+      <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="case-studies.html">Case Studies</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="process.html">Process</a><a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary">Book Discovery Call</a>
+  </div>
+
+  <section style="padding:100px 0 40px;">
+    <div class="container">
+      <span class="eyebrow reveal">BOOK A CALL</span>
+      <h1 class="reveal" style="max-width:700px;">Let's figure out what your brand needs.</h1>
+      <p style="max-width:560px;font-size:18px;margin-top:20px;" class="reveal">A 30-minute discovery call is free and commitment-free. We'll talk through your goals, your current brand situation, and what results are realistic — then you decide if we're a fit.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Calendar -->
+        <div>
+          <h3 style="margin-bottom:20px;">Find a Time</h3>
+          <div class="calendly-embed">
+            <!-- Replace the content below with your Calendly embed script -->
+            <div style="font-size:40px;">📅</div>
+            <p style="font-size:16px;font-weight:600;color:var(--c-black);">Calendar Embed</p>
+            <p style="font-size:14px;">Replace this block with your Calendly or Cal.com embed code.</p>
+            <a href="https://calendly.com" target="_blank" class="btn btn-primary" style="margin-top:16px;">Open Calendly →</a>
+          </div>
+          <div class="contact-alt">
+            <div class="contact-alt-item">
+              <strong>Email</strong>
+              <a href="mailto:hello@fluid.agency">hello@fluid.agency</a>
+            </div>
+            <div class="contact-alt-item">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/971500000000">+971 50 000 0000</a>
+            </div>
+            <div class="contact-alt-item">
+              <strong>Based In</strong>
+              <span style="font-size:16px;font-weight:500;">Dubai, UAE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <h3 style="margin-bottom:20px;">Or Send a Message</h3>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Sarah" required/>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Johnson" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme Inc."/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="sarah@acme.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="building">What are you building?</label>
+              <textarea id="building" name="building" placeholder="Tell us about your brand, what you're working on, and what you're trying to achieve..." rows="4"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select timeline</option>
+                  <option>ASAP (this week)</option>
+                  <option>1–4 weeks</option>
+                  <option>1–3 months</option>
+                  <option>3+ months</option>
+                  <option>Just exploring</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select budget</option>
+                  <option>Under $3,000</option>
+                  <option>$3,000 – $7,500</option>
+                  <option>$7,500 – $15,000</option>
+                  <option>$15,000 – $30,000</option>
+                  <option>$30,000+</option>
+                  <option>Retainer (monthly)</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn--lg" style="align-self:flex-start;">Send Message</button>
+            <p style="font-size:13px;margin-top:8px;">We reply within 24 hours on business days.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust section -->
+  <section style="padding:60px 0;background:var(--c-bg);border-top:1px solid var(--c-border);">
+    <div class="container">
+      <div class="rg-3 reveal" style="text-align:center;">
+        <div>
+          <i class="ph ph-lock" style="font-size:32px;color:var(--c-mid);display:block;margin-bottom:12px;"></i>
+          <h4>Completely Confidential</h4>
+          <p style="font-size:14px;margin-top:8px;">Your ideas and business details stay private. We sign NDAs on request.</p>
+        </div>
+        <div>
+          <i class="ph ph-chat-circle-text" style="font-size:32px;color:var(--c-mid);display:block;margin-bottom:12px;"></i>
+          <h4>No Pitch, Just Strategy</h4>
+          <p style="font-size:14px;margin-top:8px;">Discovery calls are genuinely useful conversations — not sales pitches. You'll leave with clarity either way.</p>
+        </div>
+        <div>
+          <i class="ph ph-lightning" style="font-size:32px;color:var(--c-mid);display:block;margin-bottom:12px;"></i>
+          <h4>Fast Response</h4>
+          <p style="font-size:14px;margin-top:8px;">Form submissions get a response within 24 hours. Calls are typically bookable same week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="index.html" style="font-size:22px;font-weight:700;color:#fff;">FLUID</a><p>Design that learns, remembers, and compounds.</p></div>
+        <div class="footer-col"><h4>Work</h4><ul><li><a href="case-studies.html">Case Studies</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="resources.html">Resources</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="process.html">Process</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact.html">Book a Call</a></li><li><a href="faq.html">FAQ</a></li><li><a href="comparison.html">Why FLUID?</a></li><li><a href="mailto:hello@fluid.agency">hello@fluid.agency</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 FLUID. All rights reserved.</span><div style="display:flex;gap:20px;"><a href="legal.html">Privacy</a><a href="legal.html#terms">Terms</a><a href="legal.html#cookies">Cookies</a></div></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type=submit]');
+      btn.textContent = '✓ Message Sent!';
+      btn.disabled = true;
+      btn.style.background = 'var(--c-teal)';
+    }
+  </script>
+</body>
+</html>

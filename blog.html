@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — FLUID Design Agency</title>
+  <meta name="description" content="Design, AI, Webflow, Brand, and SEO insights from the FLUID team. Practical guides for founders and marketing leaders."/>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <div class="announcement">
+    <span>Practical insights from an agency that actually does the work.</span>
+    <a href="contact.html">Book a free call →</a>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" style="font-size:22px;font-weight:700;">FLUID</a>
+      <ul class="nav-links">
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Book Discovery Call</a>
+      <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="case-studies.html">Case Studies</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="process.html">Process</a><a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary">Book Discovery Call</a>
+  </div>
+
+  <section style="padding:100px 0 60px;">
+    <div class="container">
+      <span class="eyebrow reveal">BLOG</span>
+      <h1 class="reveal">Insights for brands<br/>that want to compound.</h1>
+      <p style="max-width:560px;font-size:18px;margin-top:20px;" class="reveal">No fluff. Just practical thinking on design, AI discoverability, brand strategy, and Webflow — from a team that does this every day.</p>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <div class="container">
+
+      <!-- Featured Article -->
+      <div class="blog-featured reveal">
+        <div class="blog-featured-img">
+          <div class="img-placeholder">
+            <span class="ph-icon">🖼</span>
+            <span>Featured Article Image</span>
+          </div>
+        </div>
+        <div>
+          <span class="blog-cat">AI &amp; Discoverability</span>
+          <h2>Why Your Brand Needs to Show Up in ChatGPT (And How to Make That Happen)</h2>
+          <p>AI tools are becoming the new search engine. A growing share of your potential customers are asking ChatGPT, Perplexity, and Gemini for recommendations — not Google. Here's what you need to do about it.</p>
+          <p class="blog-meta">May 2026 · 8 min read</p>
+          <a href="#" class="btn btn-primary" style="margin-top:24px;">Read Article →</a>
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="blog-grid-cats">
+        <button class="filter-btn blog-cat-filter active" data-cat="all">All Posts</button>
+        <button class="filter-btn blog-cat-filter" data-cat="ai">AI &amp; Discoverability</button>
+        <button class="filter-btn blog-cat-filter" data-cat="design">Design</button>
+        <button class="filter-btn blog-cat-filter" data-cat="webflow">Webflow</button>
+        <button class="filter-btn blog-cat-filter" data-cat="brand">Brand</button>
+        <button class="filter-btn blog-cat-filter" data-cat="seo">SEO</button>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+
+        <div class="blog-card reveal" data-cat="brand" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Brand</span>
+          <h3>The 5 Biggest Brand Mistakes Founders Make in Year One</h3>
+          <p style="font-size:14px;">Logo-first thinking, no positioning, and building for now instead of later — we see these every week. Here's how to avoid them.</p>
+          <p class="blog-meta">April 2026 · 6 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="webflow" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Webflow</span>
+          <h3>Webflow vs WordPress in 2026: Why We Made the Switch (And Don't Regret It)</h3>
+          <p style="font-size:14px;">An honest comparison from a team that's built on both platforms for years. When Webflow wins, when it doesn't.</p>
+          <p class="blog-meta">April 2026 · 7 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="ai" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">AI &amp; Discoverability</span>
+          <h3>How We Got a Client's Brand Mentioned in ChatGPT in 60 Days</h3>
+          <p style="font-size:14px;">A step-by-step breakdown of our AI discoverability framework — authority content, structured data, entity optimization, and more.</p>
+          <p class="blog-meta">March 2026 · 9 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="design" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Design</span>
+          <h3>The Anatomy of a High-Converting Homepage in 2026</h3>
+          <p style="font-size:14px;">What makes visitors stay — and what makes them leave. Data-backed patterns from our best-performing builds.</p>
+          <p class="blog-meta">March 2026 · 5 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="seo" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">SEO</span>
+          <h3>SEO Is Dead. Long Live AI SEO. What Actually Works in 2026.</h3>
+          <p style="font-size:14px;">Traditional SEO is necessary but no longer sufficient. Here's the expanded playbook that covers both Google and AI search.</p>
+          <p class="blog-meta">February 2026 · 8 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="brand" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Brand</span>
+          <h3>What is Brand Equity — and How Do You Actually Build It?</h3>
+          <p style="font-size:14px;">Brand equity is the premium people are willing to pay because of who you are, not just what you sell. Here's how to build it systematically.</p>
+          <p class="blog-meta">February 2026 · 6 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="webflow" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Webflow</span>
+          <h3>10 Webflow CMS Tricks Every Founder Should Know</h3>
+          <p style="font-size:14px;">From conditional visibility to multi-reference fields — make your Webflow site actually manageable for non-technical teams.</p>
+          <p class="blog-meta">January 2026 · 4 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="design" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">Design</span>
+          <h3>Why Your Design Brief Is the Most Important Document in Any Project</h3>
+          <p style="font-size:14px;">A bad brief is the root cause of most bad design outcomes. Here's exactly what to put in one — and what to never leave out.</p>
+          <p class="blog-meta">January 2026 · 5 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+        <div class="blog-card reveal" data-cat="ai" style="flex-direction:column;">
+          <div class="blog-card-img">
+            <div class="img-placeholder"><span class="ph-icon">🖼</span><span>Article Image</span></div>
+          </div>
+          <span class="blog-cat">AI &amp; Discoverability</span>
+          <h3>The Complete Guide to Getting Your Brand Into AI Search Results</h3>
+          <p style="font-size:14px;">A comprehensive, no-fluff guide to AI discoverability — covering entity optimization, authority signals, and content strategy.</p>
+          <p class="blog-meta">December 2025 · 12 min read</p>
+          <a href="#" style="font-size:13px;font-weight:600;margin-top:auto;">Read Article →</a>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="blog-pagination reveal">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <span style="padding:0 4px;color:var(--c-muted);">...</span>
+        <button class="page-btn">Next →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section style="padding:var(--section-pad);background:var(--c-black);color:#fff;">
+    <div class="container" style="max-width:640px;text-align:center;">
+      <span class="eyebrow" style="color:var(--c-teal);" class="reveal">NEWSLETTER</span>
+      <h2 style="color:#fff;margin-top:12px;margin-bottom:20px;" class="reveal">Brand insights, twice a month.</h2>
+      <p style="color:rgba(255,255,255,0.6);margin-bottom:32px;" class="reveal">Practical articles on design, AI, and brand strategy. No fluff. No spam. Unsubscribe any time.</p>
+      <form style="display:flex;gap:12px;max-width:500px;margin:0 auto;" onsubmit="event.preventDefault();this.innerHTML='<p style=\'color:#00B4A0;font-weight:600;\'>✓ You\'re subscribed!</p>';" class="reveal">
+        <input type="email" placeholder="your@email.com" style="flex:1;padding:14px 16px;border:1.5px solid rgba(255,255,255,0.2);border-radius:var(--r-btn);background:rgba(255,255,255,0.05);color:#fff;font-family:var(--f-sans);font-size:15px;" required/>
+        <button type="submit" class="btn btn-teal">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="index.html" style="font-size:22px;font-weight:700;color:#fff;">FLUID</a><p>Design that learns, remembers, and compounds.</p></div>
+        <div class="footer-col"><h4>Work</h4><ul><li><a href="case-studies.html">Case Studies</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="resources.html">Resources</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="process.html">Process</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact.html">Book a Call</a></li><li><a href="faq.html">FAQ</a></li><li><a href="comparison.html">Why FLUID?</a></li><li><a href="mailto:hello@fluid.agency">hello@fluid.agency</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 FLUID. All rights reserved.</span><div style="display:flex;gap:20px;"><a href="legal.html">Privacy</a><a href="legal.html#terms">Terms</a><a href="legal.html#cookies">Cookies</a></div></div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
