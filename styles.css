@@ -267,12 +267,42 @@ em, .serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; 
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  /* fallback text styles if image fails to load */
   font-family: var(--f-primary);
   font-size: 20px;
   font-weight: 700;
   color: var(--c-darkest);
   letter-spacing: -0.03em;
-  flex-shrink: 0;
+}
+
+.nav-logo-img {
+  height: 34px;
+  width: auto;
+  max-width: 140px;
+  display: block;
+  object-fit: contain;
+  transition: opacity 0.2s;
+}
+.nav-logo:hover .nav-logo-img { opacity: 0.75; }
+
+.footer-logo-img {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.88;
+  transition: opacity 0.2s;
+}
+.footer-brand a:hover .footer-logo-img { opacity: 0.65; }
+
+@media (max-width: 768px) {
+  .nav-logo-img  { height: 28px; max-width: 120px; }
+  .footer-logo-img { height: 30px; max-width: 120px; }
 }
 
 .nav-links {
