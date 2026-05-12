@@ -250,10 +250,10 @@ em, .serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; 
 }
 
 .nav-inner {
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.5);
   box-shadow: var(--shadow-nav);
   border-radius: 9999px;
   display: flex;
@@ -264,6 +264,7 @@ em, .serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; 
   max-width: 1160px;
   margin: 0 auto;
   pointer-events: all;
+  transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .nav-logo {
@@ -1261,8 +1262,9 @@ em, .serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; 
 
 /* ---- Nav Scroll State ---- */
 .nav-inner.scrolled {
-  background: rgba(255,255,255,0.95);
-  box-shadow: rgba(0,0,0,0.12) 0px 12px 40px, rgba(255,255,255,0.9) 0px 1px 0px inset;
+  background: rgba(255,255,255,0.92);
+  border-color: rgba(255,255,255,0.8);
+  box-shadow: rgba(0,0,0,0.1) 0px 12px 40px, rgba(255,255,255,0.9) 0px 1px 0px inset;
 }
 
 /* ---- Hero Glass Buttons ---- */
@@ -1330,12 +1332,7 @@ em, .serif { font-family: var(--f-serif); font-style: italic; font-weight: 400; 
 }
 .marquee-frame:hover .marquee-img { transform: scale(1.06); }
 
-/* Gradient placeholders — swap src="" with real image URLs */
-.marquee-img--1 { background: linear-gradient(135deg, #0A2010 0%, #1A5C30 60%, #2E9650 100%); }
-.marquee-img--2 { background: linear-gradient(135deg, #0D1B2A 0%, #1E3A5F 60%, #2E6EA6 100%); }
-.marquee-img--3 { background: linear-gradient(135deg, #1A0A00 0%, #5C2A0A 60%, #A04518 100%); }
-.marquee-img--4 { background: linear-gradient(135deg, #0F0F1E 0%, #252548 60%, #3A3A7C 100%); }
-.marquee-img--5 { background: linear-gradient(135deg, #091A14 0%, #1A4A38 60%, #2E7C60 100%); }
+/* marquee-img is now always an <img> tag — background handled by object-fit */
 
 .marquee-overlay {
   position: absolute;
