@@ -116,6 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => goTo(current + 1), 6000);
   }
 
+  // ---- Nav scroll opacity ----
+  const navInnerEl = document.querySelector('.nav-inner');
+  if (navInnerEl) {
+    window.addEventListener('scroll', () => {
+      navInnerEl.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+  }
+
+  // ---- Marquee pause on hover ----
+  const marqueeTrack = document.getElementById('marqueeTrack');
+  if (marqueeTrack) {
+    marqueeTrack.querySelectorAll('.marquee-frame').forEach(frame => {
+      frame.addEventListener('mouseenter', () => marqueeTrack.classList.add('paused'));
+      frame.addEventListener('mouseleave', () => marqueeTrack.classList.remove('paused'));
+    });
+  }
+
   // ---- Blog category filter ----
   const catBtns = document.querySelectorAll('.blog-cat-filter');
   const blogCards = document.querySelectorAll('.blog-card[data-cat]');

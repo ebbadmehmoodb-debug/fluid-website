@@ -48,6 +48,70 @@
     <a href="contact.html" class="btn btn-primary">Book a Call</a>
   </div>
 
+  <!-- Portfolio Marquee -->
+  <section class="marquee-section" aria-label="Portfolio showcase">
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-frame">
+          <div class="marquee-img marquee-img--1" role="img" aria-label="Web design mockup"></div>
+          <div class="marquee-overlay">
+            <h4>Web Design</h4>
+            <p>Clean, minimal digital experiences</p>
+          </div>
+        </div>
+        <div class="marquee-frame">
+          <div class="marquee-img marquee-img--2" role="img" aria-label="App UI design"></div>
+          <div class="marquee-overlay">
+            <h4>App Interface</h4>
+            <p>Mobile-first product design</p>
+          </div>
+        </div>
+        <div class="marquee-frame">
+          <div class="marquee-img marquee-img--3" role="img" aria-label="Billboard campaign"></div>
+          <div class="marquee-overlay">
+            <h4>Large Format</h4>
+            <p>Billboard &amp; out-of-home campaigns</p>
+          </div>
+        </div>
+        <div class="marquee-frame">
+          <div class="marquee-img marquee-img--4" role="img" aria-label="Brand collateral"></div>
+          <div class="marquee-overlay">
+            <h4>Brand Collateral</h4>
+            <p>Cards, stationery &amp; identity print</p>
+          </div>
+        </div>
+        <div class="marquee-frame">
+          <div class="marquee-img marquee-img--5" role="img" aria-label="Design system"></div>
+          <div class="marquee-overlay">
+            <h4>Design Systems</h4>
+            <p>Components, tokens &amp; documentation</p>
+          </div>
+        </div>
+        <!-- Duplicate set for seamless infinite loop -->
+        <div class="marquee-frame" aria-hidden="true">
+          <div class="marquee-img marquee-img--1"></div>
+          <div class="marquee-overlay"><h4>Web Design</h4><p>Clean, minimal digital experiences</p></div>
+        </div>
+        <div class="marquee-frame" aria-hidden="true">
+          <div class="marquee-img marquee-img--2"></div>
+          <div class="marquee-overlay"><h4>App Interface</h4><p>Mobile-first product design</p></div>
+        </div>
+        <div class="marquee-frame" aria-hidden="true">
+          <div class="marquee-img marquee-img--3"></div>
+          <div class="marquee-overlay"><h4>Large Format</h4><p>Billboard &amp; out-of-home campaigns</p></div>
+        </div>
+        <div class="marquee-frame" aria-hidden="true">
+          <div class="marquee-img marquee-img--4"></div>
+          <div class="marquee-overlay"><h4>Brand Collateral</h4><p>Cards, stationery &amp; identity print</p></div>
+        </div>
+        <div class="marquee-frame" aria-hidden="true">
+          <div class="marquee-img marquee-img--5"></div>
+          <div class="marquee-overlay"><h4>Design Systems</h4><p>Components, tokens &amp; documentation</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
@@ -60,10 +124,10 @@
         FLUID merges brand strategy, Webflow development, and AI discoverability into one compounding system — so every decision builds on the last and your brand accelerates over time.
       </p>
       <div class="hero-actions reveal">
-        <a href="contact.html" class="btn btn-primary btn--lg">
+        <a href="contact.html" class="btn btn-hero-glass btn--lg">
           Book a Call <i class="ph ph-calendar-blank"></i>
         </a>
-        <a href="case-studies.html" class="btn btn-secondary btn--lg">
+        <a href="case-studies.html" class="btn btn-hero-glass btn--lg">
           View Case Studies <i class="ph ph-arrow-right"></i>
         </a>
       </div>
@@ -232,41 +296,75 @@
     </div>
   </section>
 
-  <!-- Case Studies Teaser -->
-  <section style="padding:var(--section-pad);background:var(--c-white);">
+  <!-- Latest Projects -->
+  <section class="latest-projects">
     <div class="container">
       <div class="section-hd reveal">
-        <span class="eyebrow">SELECTED WORK</span>
-        <h2>Brands we've built.</h2>
-        <p>Real projects. Real results. Each one is a case study in design meeting execution.</p>
+        <span class="eyebrow">LATEST PROJECTS</span>
+        <h2>Latest Projects</h2>
+        <p>Deep-dive into our Full-Service Case Studies</p>
       </div>
-      <div class="rg-2">
-        <a href="case-studies.html" style="display:block;">
-          <div class="work-cell reveal" style="height:320px;border-radius:var(--r-card);">
-            <div class="img-placeholder">
-              <i class="ph ph-image"></i>
-              <span>Client Project 01</span>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-bg project-bg--1"></div>
+          <div class="project-info">
+            <span class="project-cat">Financial Services</span>
+            <h3>Alvren Partners</h3>
+            <p class="project-desc">We built a unified visual and verbal brand architecture consistent enough to signal trust, differentiated enough to stand independently.</p>
+            <div class="project-services">
+              <span>Strategy</span>
+              <span>Brand Identity Design</span>
+              <span>Webflow Design / Development</span>
             </div>
           </div>
-          <div style="padding:18px 0;">
-            <strong style="display:block;font-size:17px;margin-bottom:4px;">Client Name 01</strong>
-            <span style="font-family:var(--f-body);font-size:13px;color:var(--c-muted);">Brand Identity · Webflow</span>
-          </div>
-        </a>
-        <a href="case-studies.html" style="display:block;">
-          <div class="work-cell reveal" style="height:320px;border-radius:var(--r-card);">
-            <div class="img-placeholder">
-              <i class="ph ph-image"></i>
-              <span>Client Project 02</span>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-bg project-bg--2"></div>
+          <div class="project-info">
+            <span class="project-cat">Government</span>
+            <h3>MarHub Port Community System</h3>
+            <p class="project-desc">We redesigned the brand and information architecture to reflect the platform's actual scale — credible, structured, built for institutional trust.</p>
+            <div class="project-services">
+              <span>Strategy</span>
+              <span>Brand Identity Design</span>
             </div>
           </div>
-          <div style="padding:18px 0;">
-            <strong style="display:block;font-size:17px;margin-bottom:4px;">Client Name 02</strong>
-            <span style="font-family:var(--f-body);font-size:13px;color:var(--c-muted);">Strategy · AI Deployment</span>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-bg project-bg--3"></div>
+          <div class="project-info">
+            <span class="project-cat">AI SaaS</span>
+            <h3>Flozi AEO/GEO</h3>
+            <p class="project-desc">We co-built Flozi — an AI visibility platform that tracks semantic hierarchy across ChatGPT, Perplexity, and Gemini.</p>
+            <div class="project-services">
+              <span>Strategy</span>
+              <span>Brand Identity Design</span>
+              <span>Webflow Design / Development</span>
+              <span>Product Design</span>
+            </div>
           </div>
-        </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-bg project-bg--4"></div>
+          <div class="project-info">
+            <span class="project-cat">Climate Tech</span>
+            <h3>Ahya Technologies</h3>
+            <p class="project-desc">We designed the entire system inc. brand identity, product UI, marketing site, and content architecture from the ground up.</p>
+            <div class="project-services">
+              <span>Strategy</span>
+              <span>Brand Identity Design</span>
+              <span>Webflow Design / Development</span>
+              <span>Product Design</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div style="text-align:center;margin-top:44px;" class="reveal">
+      <div style="text-align:center;margin-top:48px;" class="reveal">
         <a href="case-studies.html" class="btn btn-secondary">
           View All Case Studies <i class="ph ph-arrow-right"></i>
         </a>
